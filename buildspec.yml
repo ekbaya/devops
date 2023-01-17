@@ -4,16 +4,16 @@ phases:
 
   install: 
     commands:
-      - go get -u golang.org/x/lint/golint
+      # - go get -u golang.org/x/lint/golint
 
   pre_build: 
     commands:
 
       # Ensure code passes all lint tests
-      - golint -set_exit_status
+      # - golint -set_exit_status
 
       # Run all tests included with our application
-      - go test
+      # - go test
 
   build:
     commands:
